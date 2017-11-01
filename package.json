@@ -1,0 +1,41 @@
+{
+  "name": "test_with_ava",
+  "version": "1.0.0",
+  "description": "Learn to test using AVA",
+  "main": "index.js",
+  "bin": {
+    "test_with_ava": "./test_with_ava.js"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JenyMzo/test_with_ava.git"
+  },
+  "keywords": [
+    "nodeschool",
+    "workshopper",
+    "learn",
+    "test",
+    "ava"
+  ],
+  "author": "Jeny Mazo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JenyMzo/test_with_ava/issues"
+  },
+  "homepage": "https://github.com/JenyMzo/test_with_ava",
+  "dependencies": {
+    "adventure": "^2.11.0",
+    "adventure-verify": "^2.2.0",
+    "cli-md": "^1.0.0",
+    "concat-stream": "^1.4.8",
+    "ava": "^0.22.0",
+    "workshopper-exercise": "^2.3.0"
+  },
+  "preferGlobal": true,
+  "devDependencies": {
+    "standard": "^8.5.0"
+  }
+}
