@@ -8,6 +8,5 @@ exports.problem = parse(path.join(__dirname, 'instruction.md'))
 exports.solution = parse(path.join(__dirname, 'solution.md'))
 exports.verify = verify(execTest.bind(this, __dirname, ['fail.js'], 'pass.js'))
 exports.run = function (args) {
-  console.log(args);
   execRun(args, __dirname)
 }

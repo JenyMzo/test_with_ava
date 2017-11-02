@@ -10,37 +10,28 @@ The function will be provided in `process.argv[2]`.
 
 ## Hints
 
-The `console.log()` statement is very useful when we want to know what's going on with our code. So, if a larger application depends on a specific function in many places, a small change in one place could create a hard to find a bug. AVA provide us `asserts`. A best way to control and monitoring the behavior of our code.
+The `console.log()` statement is very useful when we want to know what's going on with our code. So, if a larger application depends on a specific function in many places, a small change in one place could create a hard to find a bug. NodeJS provide us `asserts`. A best way to control and monitoring the behavior of our code.
 
 Let's see how it works...
 
-```js  
-  test('test #1', t => {
-    t.is(index.getName(), 'Andromeda', 'it Works');
-  });
-```
-AVA is not included in Node, so you need to install it in your
-project folder (where you keep your exercise files) using `npm install ava`.
-
-And don't forget to get the sources.
 ```js
-  const test = require('ava');
+  var assert = require('assert')
+  assert(add(2,1) === 3,'add(2,1) should be 3')
 ```
 
-Here is a list of some assertions you can use. 
-
+Or as alternatively:
 ```js
-.pass([message]) //Passing assertion.
-.fail([message]) //Failing assertion.
-.truthy(value, [message]) //Assert that value is truthy.
-.falsy(value, [message]) //Assert that value is falsy.
-.true(value, [message]) //Assert that value is true.
-.false(value, [message]) //Assert that value is false.
-.is(value, expected, [message]) //Assert that value is the same as expected. This is based on Object.is().
-.not(value, expected, [message])//Assert that value is not the same as expected. This is based on Object.is().
-.deepEqual(value, expected, [message]) //Assert that value is deeply equal to expected. See Concordance for details. Works with React elements and react-test-renderer.
-.notDeepEqual(value, expected, [message])//Assert that value is not deeply equal to expected. The inverse of .deepEqual().
+  assert.deepEqual(add(2,1), 3, 'add(2,1) should be 3')
 ```
 
-## Resources
-- AVA documentation: https://www.npmjs.com/package/ava
+Here are some functions you can use with assert. For a full list, see the 
+documentation.
+```js
+assert.ok(value, message) // tests if value is truthy
+assert.equal(actual, expected, message) // ==
+assert.notEqual(actual, expected, message) // !=
+assert.deepEqual(actual, expected, message) // for comparing objects
+assert.notDeepEqual(actual, expected, message)
+assert.strictEqual(actual, expected, message) // ===
+assert.notStrictEqual(actual, expected, message) // !==
+```
