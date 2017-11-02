@@ -1,8 +1,8 @@
 # test_with_ava
-A workshop to learn how to write tests using AVA
+
 [![NPM](https://nodei.co/npm/test_with_ava.png)](https://nodei.co/npm/test_with_ava/)
 
-**Learn to test anything with AVA.**
+**A workshop to learn how to write tests using AVA.**
 
 1. Install [Node.js](http://nodejs.org/)
 2. Run `npm install test_with_ava -g`
