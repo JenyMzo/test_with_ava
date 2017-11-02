@@ -19,6 +19,8 @@ Let's see how it works...
     t.is(index.getName(), 'Andromeda', 'it Works');
   });
 ```
+AVA is not included in Node, so you need to install it in your
+project folder (where you keep your exercise files) using `npm install ava`.
 
 And don't forget to get the sources.
 ```js
