@@ -9,6 +9,8 @@ var shop = adventure({
   name: 'test_with_ava'
 })
 
+shop.add('» LOG THE ICON',
+function () { return require('./exercises/log_the_icon') })
 shop.add('» THE FRIDAY 13TH',
   function () { return require('./exercises/friday-the-thirteen') })
 shop.add('» LET\'S PREPARE PIZZA',
