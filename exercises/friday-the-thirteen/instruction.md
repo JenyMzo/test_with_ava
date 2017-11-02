@@ -2,7 +2,7 @@
 
 Months That Begin on a Sunday will Always have a Friday the 13th
 
-Write a tests for the function `isFridayTheThirteen`, it will assure that function returns `true` when passing `sunday` in it.
+Write a test for the function `isFridayTheThirteen`, it will assure that function returns `true` when passing `sunday` in it.
 
 The function will be provided in `process.argv[2]`.
 
@@ -10,14 +10,11 @@ The function will be provided in `process.argv[2]`.
 
 ## Hints
 
-The `console.log()` statement is very useful when we want to know what's going on with our code. So, if a larger application depends on a specific function in many places, a small change in one place could create a hard to find a bug in another. AVA provide us `asserts`. A best way to control and monitoring the behavior of our code.
+The `console.log()` statement is very useful when we want to know what's going on with our code. So, if a larger application depends on a specific function in many places, a small change in one place could create a hard to find a bug. AVA provide us `asserts`. A best way to control and monitoring the behavior of our code.
 
 Let's see how it works...
 
-```js
-  var assert = require('assert')
-  assert(add(2,1) === 3,'add(2,1) should be 3')
-  
+```js  
   test('test #1', t => {
     t.is(index.getName(), 'Andromeda', 'it Works');
   });
@@ -26,7 +23,6 @@ Let's see how it works...
 And don't forget to get the sources.
 ```js
   const test = require('ava');
-  import index from '../index';
 ```
 
 Here is a list of some assertions you can use. 
