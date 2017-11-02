@@ -1,5 +1,5 @@
 ```js
-var test = require('tape')
+var test = require('ava')
 var repeatCallback = require(process.argv[2])
 test.cb('calling pizza maker', function (t) {
   t.plan(3);

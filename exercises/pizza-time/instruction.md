@@ -22,13 +22,6 @@ doing.
   test.cb('testing with a callback', t => {
 	  callback('', t.end);
   });
-
-  test.cb('calling pizza maker', function (t) {
-    pizzaMaker(3, function (res) {
-        console.log(res);
-        t.is(res, '');
-        t.end();
-    });
 });
 ```
 
