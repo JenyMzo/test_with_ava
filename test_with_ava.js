@@ -14,6 +14,6 @@ function () { return require('./exercises/log_the_icon') })
 shop.add('» THE FRIDAY 13TH',
   function () { return require('./exercises/friday-the-thirteen') })
 shop.add('» LET\'S PREPARE PIZZA',
-  function () { return require('./exercises/pizza-time') })
+  function () { return require('./exercises/call-me-maybe') })
 
 shop.execute(process.argv.slice(2))

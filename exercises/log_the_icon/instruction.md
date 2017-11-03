@@ -1,4 +1,4 @@
-# Log it out
+# Log the icon
 
 Developing apps and modules is fun. However often you might be concerned whether
 things work or when you add new features you want to be sure you did not break
