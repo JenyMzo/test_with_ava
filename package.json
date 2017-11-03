@@ -1,6 +1,6 @@
 {
   "name": "test_with_ava",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Learn to test using AVA",
   "main": "index.js",
   "bin": {

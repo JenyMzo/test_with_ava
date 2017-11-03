@@ -1,6 +1,5 @@
 module.exports = function pizzaMaker (n, cb) {
-  if (n < 0) {
-    return cb(null, true)
-  }
-  return cb('error')
+  if (n < 0) return
+  cb()
+  repeatCallback(n - 1, cb)
 }
