@@ -17,7 +17,7 @@ exports.verify = verify(function (args, t) {
   var testString = Math.random() + 'test'
 
   run(args, testString).pipe(concat(function (result) {
-    t.equal(result.toString(), testString + '¯\_(ツ)_/¯ \n', 'adds icon correctly')
+    t.equal(result.toString(), testString + '¯\_(ツ)_/¯\n', 'adds icon correctly')
   }))
 })
 
