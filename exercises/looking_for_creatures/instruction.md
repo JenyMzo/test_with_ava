@@ -1,6 +1,6 @@
 # Looking for creatures
 
-Write a test for a promise `lookingForCreatures()`, that verifies that promise is resolving with a `unicorn 🦄.`
+Write a test for a promise `lookingForCreatures()`, that verifies that promise is resolving with an `unicorn 🦄.`
 
 As before the functions location will be provided through `process.argv[2]`.
 
