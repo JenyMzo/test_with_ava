@@ -1,4 +1,4 @@
-# Tape it together
+# Rocking with AVA
 
 Write tests that output `TAP`, that tests the following properties of a function
 `fancify`. The function will be provided in `process.argv[2]`.
